@@ -7,7 +7,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newList = None
+newList = [ 1, 2, 3, 4 ]
 
 ########################################################################
 
@@ -31,7 +31,8 @@ appendElement = "ok?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-listCopy = None
+listCopy = list(list1)
+listCopy.append(appendElement)
 
 ########################################################################
 
@@ -55,7 +56,8 @@ cycleMeCopy = list(cycleMe)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+cycleMe.append(cycleMe.pop(0))
+cycleMe.append(cycleMe.pop(0))
 
 ########################################################################
 
@@ -73,7 +75,7 @@ keepMe = clearJustMe
 #  so it still points to the original list. Do nothing to 'keepMe'.
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
-
+clearJustMe = []
 
 
 ########################################################################
@@ -93,7 +95,7 @@ loseMe = clearAll
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearAll.clear()
 
 ########################################################################
 
@@ -110,8 +112,8 @@ allScores = [ random.randint(0, 100), random.randint(0, 100), random.randint(0, 
 allScoresCopy = list(allScores)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
-
-top3Scores = None
+allScores.sort(reverse=True)
+top3Scores = allScores[0:3]
 
 ########################################################################
 
