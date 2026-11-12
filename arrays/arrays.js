@@ -130,7 +130,7 @@ let nthElement = generateRandomNumber(1, getMyNthElement.length)
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let arrayNthElement = getMyNthElement(nthElement -1)
+let arrayNthElement = getMyNthElement[nthElement -1]
 
 ////////////////////////////////////////////////////////////////////////
 
